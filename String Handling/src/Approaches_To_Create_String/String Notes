@@ -1,0 +1,33 @@
+Strings, which are widely used in Java programming, are a sequence of characters.
+ In the Java programming language, strings are objects.
+
+The Java platform provides the String class to create and manipulate strings.
+
+Creating Strings
+The most direct way to create a string is to write:
+
+String greeting = "Hello world!";
+In this case, "Hello world!" is a string literal—a series of characters in your code that is 
+enclosed in double quotes. Whenever it encounters a string literal in your code, the compiler 
+creates a String object with its value—in this case, Hello world!.
+
+As with any other object, you can create String objects by using the new keyword and a constructor.
+The String class has thirteen constructors that allow you to provide the initial value
+ of the string using different sources, such as an array of characters:
+
+char[] helloArray = { 'h', 'e', 'l', 'l', 'o', '.' };
+String helloString = new String(helloArray);
+System.out.println(helloString);
+The last line of this code snippet displays hello.
+
+Note: The String class is immutable, so that once it is created a String object cannot be changed. 
+The String class has a number of methods, some of which will be discussed below, 
+that appear to modify strings. Since strings are immutable, 
+what these methods really do is create and return a new string that contains the result of the operation.
+
+The java.lang.String class implements Serializable, Comparable and CharSequence interfaces.
+
+ String objects are stored in a special memory area known as the "string constant pool".
+ 
+ intern
+ 
